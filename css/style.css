@@ -4,6 +4,9 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+p .about_disp{
+    color:red;
+}
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -254,7 +257,7 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 .callbacks_nav {
     position: absolute;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-       bottom: 24%;
+    bottom: 24%;
     left: 0;
     z-index: 3;
     text-indent: -9999px;
@@ -392,13 +395,22 @@ ul.top-links li a i.fa {
     width: 36px;
     height: 36px;
     border: 2px solid #fff;
+
+
 }
+
 ul.top-links li a i.fa:hover {
     color:#44c7f4;
+
 }
+
 .w3_navigation {
     background: #44c7f4;
     padding: 0.5em 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 10;
 }
 /*-- //social-icons --*/
 /*-- //banner --*/
@@ -429,7 +441,7 @@ h3.w3l_head {
     text-align: center;
     color: #111;
     font-size: 3.5em;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 }
 h3.w3l_head.three {
     color: #44c7f4;
@@ -1013,6 +1025,8 @@ p.counter {
 	border:none;
 }
 /*-- to-top --*/
+
+
 #toTop {
 	display: none;
 	text-decoration: none;
@@ -1322,6 +1336,7 @@ p.counter {
 	}
 	.w3_navigation {
 		padding: 0em 0;
+
 	}
 	.banner img {
 		border: 5px solid #44c7f4;
@@ -1580,6 +1595,7 @@ p.counter {
 		color: #44c7f4;
 		letter-spacing:4px;
 	}
+
 	.hovereffect h4 {
 		font-size: 1.8em;
 		padding: 2.3em 0 0.5em;
